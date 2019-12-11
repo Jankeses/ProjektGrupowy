@@ -17,6 +17,7 @@ public class EmpController {
 
     public EmpController() {
         HibernateDao employeeDao = new HibernateDao();
+	SupplyDatabase supplyDatabase = new SupplyDatabase();
         list = employeeDao.getEmployees();
     }
 
